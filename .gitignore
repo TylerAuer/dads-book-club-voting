@@ -1,3 +1,8 @@
+# These contain email addresses and names so do not commit them
+form_responses/
+
+# Everything below here is GitHub's Python.gitignore template
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
