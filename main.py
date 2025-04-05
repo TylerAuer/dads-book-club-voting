@@ -17,20 +17,6 @@ _LAST_NAME_COLUMN_IDX: Final[int] = 4
 _BOOK_PREFS_COLUMN_IDX: Final[int] = 6
 
 
-"""
-Book Selection Algorithm
-
-The goal is to minimize the average rank of the book selected for each person -- the optimal outcome
-is that everyone gets to discuss their 1st choice book
-
-We consider every combination of books where k books are selected from n books. 
-And k can var from 1 to n. In other words, we consider one group for every book, two groups for 
-every pair of books, three groups for every triplet of books, etc.
-
-We don't force a number of books to be selected except to be sure that each group has at least the 
-minimum number of people to discuss a book 
-"""
-
 @dataclasses.dataclass()
 class UserPreference:
     first_name: str
