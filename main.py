@@ -184,7 +184,7 @@ def print_results(
 ):
     print("Dad's Book Club Book Selection Results")
     print()
-    print(f'Found optimal book selector for {len(user_prefs)} people and {len(book_titles)} books.')
+    print(f'Found optimal book selection(s) for {len(user_prefs)} people and {len(book_titles)} books.')
     print(f'Considered {len(book_combos)} different book combinations of which {len(combo_summaries)} had enough people in each group.')
 
     for i, combo in enumerate(sorted_combo_summaries[0:3]):

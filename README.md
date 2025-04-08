@@ -3,10 +3,11 @@
 This is a script I wrote for helping my book club select books to read. We rank a set of books in
 order of preference, and this program decides which book(s) we'll read.
 
-It's a custom algorithm because I wanted to allow for possibility of selecting multiple books. The algorithm has two assumptions:
+It's a custom algorithm because I wanted to allow for possibility of selecting multiple books. The algorithm has three assumptions:
 
 - Each person is always assigned to read the highest rank book in the chosen set of books -- people want to read the book they ranked highest
 - We only consider combinations of books where the above is true and where each book has a minimum number of people assigned to it -- you need some minimum number of people to discuss a book
+- Each person will only read one book -- we don't want to assign people to read multiple books (although it won't really mess things up if they do)
 
 We consider each person's "score" to be the rank of the book they are assigned to read -- lower is better.
 
